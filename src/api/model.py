@@ -2,12 +2,10 @@ import os
 import joblib
 import numpy as np
 
-MODEL_PATH = os.path.join("models", "sentiment_model.pkl")
+MODEL_PATH = os.path.join("models", "sentiment_model.joblib")
 LABELS     = {-1: "Négatif", 0: "Neutre", 1: "Positif"}
 
 _pipeline = None
-
-
 def load_model():
     global _pipeline
     if _pipeline is None:
@@ -16,10 +14,8 @@ def load_model():
         _pipeline = joblib.load(MODEL_PATH)
     return _pipeline
 
-
 def is_loaded() -> bool:
     return _pipeline is not None
-
 
 def predict(comments: list[str]) -> list[dict]:
     model = load_model()
@@ -38,3 +34,4 @@ def predict(comments: list[str]) -> list[dict]:
             "confidence": round(confidence, 4),
         })
     return results
+

@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report
 
 TRAIN_PATH = os.path.join("data", "processed", "train.csv")
 TEST_PATH  = os.path.join("data", "processed", "test.csv")
-MODEL_PATH = os.path.join("models", "sentiment_model.pkl")
+MODEL_PATH = os.path.join("models", "sentiment_model.joblib")
 LABELS = {-1: "Négatif", 0: "Neutre", 1: "Positif"}
 
 def train():

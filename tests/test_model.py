@@ -1,7 +1,7 @@
 import os, time, pytest, joblib
 import pandas as pd
 
-MODEL_PATH = os.path.join("models", "sentiment_model.pkl")
+MODEL_PATH = os.path.join("models", "sentiment_model.joblib")
 TEST_PATH  = os.path.join("data", "processed", "test.csv")
 
 

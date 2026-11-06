@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, field_validator
 from typing import List
 
-MODEL_PATH = os.path.join("models", "sentiment_model.pkl")
+MODEL_PATH = os.path.join("models", "sentiment_model.joblib")
 LABELS     = {-1: "Négatif", 0: "Neutre", 1: "Positif"}
 
 _pipeline = None

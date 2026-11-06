@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, f1_score, classification_report, con
 
 TRAIN_PATH  = os.path.join("data", "processed", "train.csv")
 TEST_PATH   = os.path.join("data", "processed", "test.csv")
-MODEL_PATH  = os.path.join("models", "sentiment_model.pkl")
+MODEL_PATH  = os.path.join("models", "sentiment_model.joblib")
 LABELS      = {-1: "Negatif", 0: "Neutre", 1: "Positif"}
 LABEL_NAMES = [LABELS[i] for i in sorted(LABELS)]
 

@@ -10,7 +10,7 @@ COPY requirements_prod.txt .
 RUN pip install --no-cache-dir -r requirements_prod.txt
 
 COPY app_api.py .
-COPY models/sentiment_model.pkl models/
+COPY models/sentiment_model.joblib models/
 
 EXPOSE 7860
 
