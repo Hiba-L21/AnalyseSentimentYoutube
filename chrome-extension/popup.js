@@ -1,8 +1,8 @@
 /**
- * Popup Script — logique de l'extension
+ * Popup Script 
  */
-
-const API_URL   = "http://localhost:8000/predict_batch";
+const API_URL = "http://localhost:8000/predict_batch";
+// const API_URL   = "https://organic-space-broccoli-wrgg99ww6gqqh5659-7860.app.github.dev/predict_batch";
 const SENTIMENT = { "Positif": 1, "Neutre": 0, "Négatif": -1 };
 const COLORS    = { "Positif": "#22c55e", "Neutre": "#f59e0b", "Négatif": "#ef4444" };
 

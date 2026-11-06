@@ -1,9 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-
 from src.api.schemas import PredictRequest, PredictResponse, HealthResponse
 from src.api import model as ml
-
 
 app = FastAPI(
     title="YouTube Sentiment API",
